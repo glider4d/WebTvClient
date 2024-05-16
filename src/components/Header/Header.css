@@ -1,0 +1,192 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index: 100;
+}
+
+/* Nav */
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.search-box {
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: var(--container-color);
+    border-radius: 4rem;
+    margin-right: 1rem;
+}
+
+.search-box .bx {
+    font-size: 1.1rem;
+}
+
+.search-box .bx:hover {
+    color: var(--main-color);
+}
+
+#search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 0.938rem;
+
+}
+
+/* User */
+
+.user {
+    display: flex;
+}
+
+.user-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 452px){
+    .search-box {
+         max-width: 50%;
+ 
+    }
+ }
+ 
+
+ 
+@media (max-width: 370px) {
+    .user-img .watch-btn .bx{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 514px) {
+    .heading {
+        padding: 2px 14px;
+    }
+
+    .heading-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 452px){
+    .search-box {
+         max-width: 50%;
+ 
+    }
+ }
+
+
+ @media (max-width: 408px){
+    * {
+        scroll-padding-top: 5rem;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 5px;
+    }
+
+    .search-box {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 4px;
+        order: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .container-play-page {
+        max-width: 95%;
+    }
+
+    .home, .play-container {
+        margin-top: 7rem !important;
+    }
+
+    .movie-box {
+        height: 280px;
+    }
+
+    .movies-content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
+
+
+/* For Small Devices */
+
+@media (max-width: 370px) {
+    /* .home {
+        min-height: 100px;
+    } */
+
+    .movie-box {
+        height: 285px;
+    }
+
+    .user-img .watch-btn .bx{
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar {
+        justify-content: space-around;
+        padding: 6px 0;
+    }
+
+    .nav-link .bx {
+        font-size: 1.4rem;
+    }
+
+    /* plau-page */
+    .about-movie p {
+        text-align: justify;
+    }
+
+    .cast {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+        gap: 1rem;
+    }
+    
+
+}

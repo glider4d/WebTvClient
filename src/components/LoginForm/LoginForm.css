@@ -1,0 +1,172 @@
+:root {
+    --primary-color: rgb(68, 9, 28);
+    --secondary-color: rgb(104, 14, 53);
+}
+  
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+
+    /* background: seagreen;     */
+    background: url('../Assets/background7.jpg') center no-repeat;
+    background-size: cover;
+    background-position: cover;
+}
+
+.wrapper__into{
+    width: 620px;
+    min-height: 520px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(122, 255, 122, .2);
+    /* background: slateblue; */
+    color: var( --primary-color);
+    text-shadow: #000 1px 1px 2px;
+
+    border-radius: 40px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    /* background: salmon; */
+    margin: 40px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    
+    border: 2px solid rgba(255,255,255,.2);
+    outline: none;
+    border-radius: 40px;
+    font-size: 22px;
+    color:var(--secondary-color);
+    padding: 20px 50px 20px 50px;
+    text-shadow: #000 1px 1px 2px;
+
+}
+
+.input-box input::placeholder{
+    color:var( --primary-color);
+    text-shadow: #000 1px 1px 2px;
+
+    opacity: .7;
+}
+
+.login__form{
+    min-width: 100%;
+}
+
+.input-box input::placeholder:hover{
+    opacity: 1;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: var( --primary-color);
+    margin-right: 4px;
+}
+
+.remember-forgot a{
+    color: var( --primary-color);
+    text-shadow: #000 1px 1px 2px;
+
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    /* background: #fff; */
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 3px solid rgba(255, 255, 255, .3);
+
+    text-shadow: #000 1px 1px 2px;
+    font-size: large;
+    color:var( --primary-color);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 12, 0, .6);
+    transition: all .5s ease;
+    margin-bottom: 20px;    
+}
+
+.wrongpassword-message {
+    text-align: center;
+    color:red;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.wrapper button:hover,:focus{
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+}
+
+.register-link p a {
+    /* margin-top: 190px; */
+    color:#fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.register-link p a:hover,:focus{
+    text-decoration: underline;
+}
+
+
+.register-qr {
+    text-align: center;
+}
+
+.register-qr--title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+        /* margin-top: 20px 0 15px; */
+    /* text-align: center; */
+}

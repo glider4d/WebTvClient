@@ -1,0 +1,66 @@
+
+/* Swiper Btns */
+
+.swiper-btn {
+    display: flex;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    position: static !important;
+    margin: 0 0 0 10px !important;   
+
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    color: var(--text-color);
+    font-size: 18px !important;
+    font-weight: 700;    
+}
+
+ 
+.movies-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+    gap: 1rem;
+}
+
+.movies-content .movie-box:hover .movie-box-img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+@media (max-width: 991px) {
+    .movie-box {
+        height: 340px;
+    }
+    .movies-content{
+        grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+    }
+}
+
+@media (max-width: 888px){
+    .movie-title {
+        font-size: 1rem;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 408px){
+    .movie-box {
+        height: 280px;
+    }
+
+    .movies-content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .movie-box {
+        height: 285px;
+    }
+}
